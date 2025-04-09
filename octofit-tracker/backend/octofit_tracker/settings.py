@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-e5c$f3u!#0)o4q(8^#85ik5weomlu2s)d7r2lk(8c33j!17827
 DEBUG = True
 
 # Allow all hosts
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'cuddly-adventure-g4qpvpgv6x952v97-8000.app.github.dev']
 
 
 # Application definition
@@ -148,4 +148,4 @@ CORS_ALLOW_HEADERS = [
 ]
 
 # Allow all hosts
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'cuddly-adventure-g4qpvpgv6x952v97-8000.app.github.dev']
