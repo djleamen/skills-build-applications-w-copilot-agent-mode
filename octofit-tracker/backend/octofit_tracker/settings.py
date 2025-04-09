@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'corsheaders',
+    'rest_framework',
+    'djongo',
+    'octofit_tracker',
 ]
 
 MIDDLEWARE = [
@@ -128,7 +131,7 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# Enable CORS
+# Enable CORS for all origins, methods, and headers
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_METHODS = [
     'GET',
@@ -143,3 +146,6 @@ CORS_ALLOW_HEADERS = [
     'authorization',
     'x-csrftoken',
 ]
+
+# Allow all hosts
+ALLOWED_HOSTS = ['*']

@@ -32,3 +32,23 @@ class OctofitTrackerTests(TestCase):
     def test_get_workouts(self):
         response = self.client.get('/api/workouts/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_user_creation(self):
+        response = self.client.get("/api/users/")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_team_creation(self):
+        response = self.client.get("/api/teams/")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_activity_creation(self):
+        response = self.client.get("/api/activities/")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_leaderboard_creation(self):
+        response = self.client.get("/api/leaderboard/")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_workout_creation(self):
+        response = self.client.get("/api/workouts/")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
